@@ -1,0 +1,14 @@
+html, body, #root {
+  height: 100%;           /* Asegura que todo ocupe 100% de la ventana */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  min-width: 320px;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Fondo bonito */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
