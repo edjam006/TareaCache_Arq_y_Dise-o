@@ -1,14 +1,24 @@
 html, body, #root {
-  height: 100%;           /* Asegura que todo ocupe 100% de la ventana */
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
   display: flex;
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
-  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Fondo bonito */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Gradiente animado */
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

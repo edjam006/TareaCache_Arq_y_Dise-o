@@ -25,7 +25,7 @@ function App() {
     };
 
     const cardStyle = {
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)', // 0.8 = un poco transparente
         padding: '40px 50px',
         borderRadius: '20px',
         boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
@@ -33,6 +33,7 @@ function App() {
         minWidth: '300px',
         maxWidth: '90%'
     };
+
 
     const inputStyle = {
         padding: '10px',
